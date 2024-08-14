@@ -1,0 +1,43 @@
+@import "../../../../assets/styles/variables";
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+  .page-item {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    color: #333;
+    padding: 8px 12px;
+    margin: 0 4px;
+    cursor: pointer;
+    border-radius: 6px;
+    min-width: 32px;
+    text-align: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background-color: #f8f8f8;
+    }
+
+    &.active {
+      background-color: $primary-color;
+      color: white;
+      border-color: $primary-color;
+    }
+
+    &.arrow {
+      font-size: 16px;
+      padding: 8px 10px;
+    }
+
+    &:disabled {
+      background-color: #e9ecef;
+      border-color: #dee2e6;
+      color: #6c757d;
+      cursor: not-allowed;
+    }
+  }
+}
